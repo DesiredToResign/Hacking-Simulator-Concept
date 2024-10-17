@@ -1,0 +1,1 @@
+﻿Console.WriteLine("WELCOME TO HACKING SIMULATOR!");
