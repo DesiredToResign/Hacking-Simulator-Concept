@@ -22,7 +22,7 @@ namespace Hacking_Simulator
 
         public static void MainProgram()
         {
-            Console.WriteLine("Let's Get Started...");
+            Console.WriteLine("Alrighty...");
             Console.WriteLine("\nPRESS ANY KEY TO CONTINUE");
             Console.ReadKey(true);
             Console.Clear();
@@ -32,22 +32,68 @@ namespace Hacking_Simulator
             if (response == "1")
             {
                 Console.Clear();
-                // Peneration();
+                Penetration();
             }
             else if (response == "2")
             {
                 Console.Clear();
-                // RemoteAccess();
+                RemoteAccess();
             }
             else if (response == "3")
             {
                 Console.Clear();
-                // Upgrades();
+                Upgrades();
             }
             else
             {
+                Console.Clear();
                 MainProgram();
             }
+        }
+
+        public static void Penetration()
+        {
+            Console.WriteLine("// SUPER-DUPER EPIC PEN-TESTER 9000 //");
+            Console.WriteLine("\n [1] START PEN-TEST [2] BACK");
+            string response = Console.ReadKey(true).KeyChar.ToString().ToLower();
+            if (response == "1") 
+            {
+                Console.Clear();
+                Console.Beep();
+                Console.WriteLine("CHOOSE TARGET...");
+                Console.WriteLine("\n[1] Level 1 Scrub \n[2] Level 20 Hacker \n[3] Level 100 Cybersecurity Expert \n[4] Random Bank");
+                if (response == "1")
+                {
+
+                }
+                else if (response == "2")
+                {
+
+                }
+                else if (response == "3")
+                {
+
+                }
+                else if (response == "4")
+                {
+
+                }
+            }
+            else if (response == "2")
+            {
+                Console.Clear();
+                MainProgram();
+            }
+        }
+
+        public static void RemoteAccess()
+        {
+
+        }
+
+        public static void Upgrades()
+        {
+
         }
     }
 }
