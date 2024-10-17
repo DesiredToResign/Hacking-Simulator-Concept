@@ -5,7 +5,6 @@ namespace Hacking_Simulator
 {
     class Program
     {
-        string response = Console.ReadKey(true).KeyChar.ToString().ToLower();
         public static void Main(string[] args)
         {
             Start();
@@ -27,7 +26,28 @@ namespace Hacking_Simulator
             Console.WriteLine("\nPRESS ANY KEY TO CONTINUE");
             Console.ReadKey(true);
             Console.Clear();
-
+            Console.WriteLine("CHOOSE ANY OF THE HACKS POSTED BELOW");
+            Console.WriteLine("\n[1] Penetration [2] Remote Access [3] Upgrades");
+            string response = Console.ReadKey(true).KeyChar.ToString().ToLower();
+            if (response == "1")
+            {
+                Console.Clear();
+                // Peneration();
+            }
+            else if (response == "2")
+            {
+                Console.Clear();
+                // RemoteAccess();
+            }
+            else if (response == "3")
+            {
+                Console.Clear();
+                // Upgrades();
+            }
+            else
+            {
+                MainProgram();
+            }
         }
     }
 }
